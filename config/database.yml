@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: <%= Rails.application.credentials[Rails.env.to_sym][:postgres][:username] %>
+  password: <%= Rails.application.credentials[Rails.env.to_sym][:postgres][:password] %>
+  database: <%= Rails.application.credentials[Rails.env.to_sym][:postgres][:database] %>
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
