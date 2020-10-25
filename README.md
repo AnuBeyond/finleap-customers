@@ -1,5 +1,7 @@
 # Finleap-Customer README
 
+Demo deployment of this app can be found [finleap-customers](https://finleap-customers.herokuapp.com)
+
 ## System Dependencies
 
 **ruby 2.6.3**
