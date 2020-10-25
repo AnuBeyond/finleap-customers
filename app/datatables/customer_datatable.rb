@@ -7,7 +7,7 @@ class CustomerDatatable < ApplicationDatatable
       [].tap do |column|
         column << customer['user_id']
         column << customer['name']
-        column << customer['distance']
+        column << customer['distance'] #this key is being merged into customer record during distance calcultion
       end
     end
   end
