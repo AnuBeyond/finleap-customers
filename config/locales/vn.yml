@@ -1,0 +1,6 @@
+vn:
+  customers:
+    customers: khách hàng
+    id: ID
+    name: Tên
+    distance: khoảng cách

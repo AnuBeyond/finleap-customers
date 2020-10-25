@@ -1,0 +1,21 @@
+.container.mt-5
+  .card
+    .card-header
+      .row
+        .col-md-10
+          %h1= t('customers.customers')
+        .col-md-2
+          %span.text-right
+            = link_to_unless_current 'Tiếng Việt', locale: "vn"
+            = link_to_unless_current 'English', locale: "en"
+      .card-body
+        .row.no-gutter
+          .col-lg-12
+            = content_tag :table, id: "customer-datatable", class: 'table table-striped', data: { url: customers_path(format: :json)} do
+              %thead
+                %tr
+                  %th= t('customers.id')
+                  %th= t('customers.name')
+                  %th= t('customers.distance') + " (Km)"
+              %tbody
+                //we use server side rendering
