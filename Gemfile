@@ -42,3 +42,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #custom gems
 gem 'haml-rails'
 gem 'i18n', '~> 1.8', '>= 1.8.5'
+gem 'kaminari'
