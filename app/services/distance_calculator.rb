@@ -1,7 +1,7 @@
 class DistanceCalculator < ApplicationService
   attr_reader :data, :radius
 
-  def initialize(data, radius)
+  def initialize(data, radius = 100)
     @data = data
     @filter_data = []
     @radius = radius #distance for search from given center location in Km
